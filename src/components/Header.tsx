@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Palette } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { PageView } from '../types';
 
 interface HeaderProps {
@@ -8,17 +8,13 @@ interface HeaderProps {
   setActiveView: (view: PageView) => void;
   onOpenBookVisit: () => void;
   onOpenEnquiry: () => void;
-  theme: 'yellow' | 'blue' | 'green' | 'pink';
-  setTheme: (theme: 'yellow' | 'blue' | 'green' | 'pink') => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   activeView,
   setActiveView,
   onOpenBookVisit,
-  onOpenEnquiry,
-  theme,
-  setTheme
+  onOpenEnquiry
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -39,13 +35,6 @@ export const Header: React.FC<HeaderProps> = ({
     { id: 'campus', label: 'Life at School' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'contact', label: 'Contact Us' },
-  ];
-
-  const themes: { id: 'yellow' | 'blue' | 'green' | 'pink'; color: string; label: string }[] = [
-    { id: 'yellow', color: 'bg-amber-400', label: 'Sunny Yellow' },
-    { id: 'blue', color: 'bg-sky-400', label: 'Sky Blue' },
-    { id: 'green', color: 'bg-emerald-500', label: 'Forest Green' },
-    { id: 'pink', color: 'bg-pink-400', label: 'Sweet Pink' },
   ];
 
   const handleNavClick = (view: PageView) => {
@@ -110,22 +99,8 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </nav>
 
-          {/* Desktop CTAs & Theme Selector */}
+          {/* Desktop CTAs */}
           <div className="hidden lg:flex items-center gap-4">
-            <div className="flex items-center gap-1.5 bg-secondary px-3 py-1.5 rounded-full border border-primary/10">
-              <Palette className="w-3.5 h-3.5 text-primary opacity-70" />
-              {themes.map((t) => (
-                <button
-                  key={t.id}
-                  onClick={() => setTheme(t.id)}
-                  title={t.label}
-                  className={`w-4 h-4 rounded-full ${t.color} border transition-all duration-300 relative ${
-                    theme === t.id ? 'scale-125 border-slate-900 ring-2 ring-white shadow-sm' : 'border-transparent opacity-60 hover:opacity-100 hover:scale-115'
-                  }`}
-                />
-              ))}
-            </div>
-
             <button
               onClick={onOpenBookVisit}
               className={`px-5 py-2 rounded-full text-sm font-sans font-bold transition-all duration-200 bg-primary text-white hover:scale-105 active:scale-95`}
@@ -185,39 +160,10 @@ export const Header: React.FC<HeaderProps> = ({
                 </motion.button>
               ))}
 
-              {/* Theme Switcher for Mobile */}
-              <motion.div
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.35 }}
-                className="mt-4 p-4 rounded-3xl bg-secondary border border-primary/10"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <Palette className="w-4 h-4 text-primary" />
-                  <span className="text-xs uppercase tracking-wider font-bold text-slate-600">Select Theme</span>
-                </div>
-                <div className="grid grid-cols-4 gap-2">
-                  {themes.map((t) => (
-                    <button
-                      key={t.id}
-                      onClick={() => setTheme(t.id)}
-                      className={`py-2 rounded-2xl text-xs font-semibold border flex flex-col items-center gap-1.5 transition-all ${
-                        theme === t.id 
-                          ? 'bg-white border-primary text-primary font-bold shadow-sm' 
-                          : 'bg-transparent border-slate-200 text-slate-500'
-                      }`}
-                    >
-                      <span className={`w-3.5 h-3.5 rounded-full ${t.color}`} />
-                      <span className="text-[10px] capitalize">{t.id}</span>
-                    </button>
-                  ))}
-                </div>
-              </motion.div>
-
               <motion.div 
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.45 }}
+                transition={{ delay: 0.35 }}
                 className="mt-4 flex flex-col gap-3"
               >
                 <button

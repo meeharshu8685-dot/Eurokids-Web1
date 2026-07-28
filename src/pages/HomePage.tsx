@@ -29,7 +29,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=cropw=2000https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=cropauto=formathttps://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=cropfit=crop" 
+            src="/kid-whiteboard.png" 
             alt="Children playing" 
             className="w-full h-full object-cover object-top"
           />
@@ -130,7 +130,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="absolute inset-0 bg-sage rounded-[30px] transform translate-x-4 translate-y-4 -z-10 opacity-20"></div>
             <div className="aspect-[4/5] rounded-[30px] overflow-hidden relative border-3 border-slate-900 shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop" 
+                src="/litquest-classroom.png" 
                 alt="Teacher reading to child" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
               />
@@ -169,7 +169,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 className="aspect-[3/4] rounded-[30px] overflow-hidden shadow-xl border-3 border-[#0F172A]"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop" 
+                  src="/heureka-curriculum.png" 
                   alt="Parents visiting school" 
                   className="w-full h-full object-cover"
                 />
@@ -218,7 +218,7 @@ export const HomePage: React.FC<HomePageProps> = ({
            >
              <div className="aspect-square rounded-[40px] overflow-hidden border-3 border-slate-900 shadow-xl">
                <img 
-                 src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1200&auto=format&fit=crop" 
+                 src="/word-wheel.png" 
                  alt="Child painting" 
                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
                />

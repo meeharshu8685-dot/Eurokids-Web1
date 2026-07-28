@@ -56,8 +56,6 @@ export default function App() {
         setActiveView={setActiveView}
         onOpenBookVisit={handleOpenBookVisit}
         onOpenEnquiry={handleOpenEnquiry}
-        theme={theme}
-        setTheme={setTheme}
       />
 
       <main className="flex-1 relative z-10">
