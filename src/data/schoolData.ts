@@ -268,15 +268,6 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     bio: "Harsha believes that school should feel like a second home. She is dedicated to creating a warm, supportive space where children feel safe to learn.",
     image: "/heureka-curriculum.png",
     specialty: "Early Childhood Pedagogy & Care"
-  },
-  {
-    name: "Mrs. Shalini Sharma",
-    role: "Principal & Head of School",
-    qualification: "B.Ed. with Child Psychology specialization",
-    experience: "8+ Years",
-    bio: "Shalini coordinates daily activities, focusing on child safety, emotional comfort, and ensuring every child is greeted with a warm smile.",
-    image: "/litquest-classroom.png",
-    specialty: "Interactive Storytelling & Child Comfort"
   }
 ];
 
