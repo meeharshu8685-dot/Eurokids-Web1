@@ -11,23 +11,23 @@ import {
 } from '../types';
 
 export const SCHOOL_INFO = {
-  name: "School Name",
-  tagline: "A happy place where little minds grow.",
-  address: "School Address",
-  phone: "Phone Number",
-  altPhone: "Alternative Phone",
-  email: "Email Address",
-  whatsapp: "WhatsApp Number",
-  officeHours: "Office Timings",
+  name: "EuroKids Balwant Nagar",
+  tagline: "A happy place where young children feel at home while they learn.",
+  address: "E-46-A, Balwant Nagar, Gandhi Road, Thatipur, Gwalior, Madhya Pradesh - 474011",
+  phone: "+91-8056286765",
+  altPhone: "+91-8056286765",
+  email: "Eurokidsccgwl@gmail.com",
+  whatsapp: "+91-8056286765",
+  officeHours: "9:00 AM – 5:00 PM (Monday to Saturday)",
   established: 2018,
-  city: "City, State",
-  mapsUrl: "https://maps.google.com",
-  mapCoordinates: { lat: 26.2183, lng: 78.1828 },
+  city: "Gwalior, Madhya Pradesh",
+  mapsUrl: "https://maps.google.com/?q=26.21089,78.193871",
+  mapCoordinates: { lat: 26.21089, lng: 78.193871 },
   stats: [
-    { label: "Experiential Learning", value: "Curriculum" },
-    { label: "Campus Safety", value: "Premium" },
-    { label: "Community", value: "Engaged" },
-    { label: "Environment", value: "Eco-Friendly" },
+    { label: "Hands-on Learning", value: "Curriculum" },
+    { label: "Child Safety", value: "CCTV Guarded" },
+    { label: "Family Community", value: "Engaged" },
+    { label: "Outdoor Play Space", value: "Nature-focused" },
   ]
 };
 
@@ -35,24 +35,24 @@ export const PROGRAMS_DATA: ProgramItem[] = [
   {
     id: "playgroup",
     name: "Playgroup",
-    subtitle: "A gentle introduction to learning.",
-    ageGroup: "Age Group Placeholder",
-    timing: "Program Timing Placeholder",
-    teacherRatio: "Low student-teacher ratio",
-    description: "Our Playgroup environment is crafted as an extension of home — calm, tactile, and rich in natural materials. Toddlers explore sensory bins, soft movement spaces, music, and language immersion that gently builds confidence and emotional security.",
+    subtitle: "A gentle transition from home to school.",
+    ageGroup: "1.8 to 3 Years",
+    timing: "9:30 AM to 12:30 PM",
+    teacherRatio: "Small groups with dedicated attention",
+    description: "Our Playgroup space is designed to feel like a cozy home. Toddlers learn naturally through touch, sound, and play, using soft shapes, musical tunes, and simple activities to build early coordination and self-reliance.",
     keyOutcomes: [
-      "Sensory-motor coordination through natural textures",
-      "Early vocabulary building and rhyming fluency",
-      "Cooperative play and gentle emotional regulation",
-      "Gross motor milestones via soft obstacle courses"
+      "Using hands and fingers to explore different textures",
+      "Sharing, listening, and expressing feelings gently",
+      "Exploring new words through rhymes and stories",
+      "Climbing, balance, and early motor coordination"
     ],
     dailyHighlights: [
-      "Sensory Exploration Corner",
-      "Circle Time & Rhyme Symphony",
-      "Mess-free Finger Painting",
-      "Organic Fruit & Snack Break"
+      "Sensory Play and Sand Fun",
+      "Story Circle and Rhyme Time",
+      "Water and Paint Exploration",
+      "Healthy Fruit and Snack Break"
     ],
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
+    image: "/word-wheel.png",
     badge: "First Steps",
     annualFee: "",
     termFee: ""
@@ -60,100 +60,100 @@ export const PROGRAMS_DATA: ProgramItem[] = [
   {
     id: "nursery",
     name: "Nursery",
-    subtitle: "Unlocking Curiosity & Foundational Language",
-    ageGroup: "Age Group Placeholder",
-    timing: "Program Timing Placeholder",
-    teacherRatio: "Low student-teacher ratio",
-    description: "Nursery children engage in structured play, phonics foundations, inquiry-based storytelling, and mathematical sorting. Through Reggio Emilia inspired provocation tables, children lead their own learning journeys with guided mentorship.",
+    subtitle: "Nurturing early questions and words.",
+    ageGroup: "3 to 4 Years",
+    timing: "9:00 AM to 1:00 PM",
+    teacherRatio: "Small groups with dedicated attention",
+    description: "In Nursery, we encourage children's natural curiosity. Through storytelling, phonic sounds, and matching games, they begin to connect letters, numbers, and shapes, growing more independent every day.",
     keyOutcomes: [
-      "Jolly Phonics foundation & pre-writing stroke mastery",
-      "Number sense, shapes, and spatial reasoning",
-      "Self-help skills including dining etiquette & tidying",
-      "Nature investigation in our organic garden"
+      "Saying letter sounds and tracing basic shapes",
+      "Counting, sorting objects, and spotting patterns masterfully",
+      "Washing hands, serving snacks, and keeping toys tidy",
+      "Planting seeds and caring for classroom plants"
     ],
     dailyHighlights: [
-      "Morning Mindfulness & Yoga Stretch",
-      "Interactive Storytelling Nook",
-      "Mathematical Sorting & Blocks",
-      "Outdoor Mud Kitchen & Gardening"
+      "Morning Stretches and Breathing",
+      "Picture Book Story Hour",
+      "Blocks, Matching, and Puzzles",
+      "Mud Play and Seed Planting"
     ],
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
-    badge: "Exploration",
+    image: "/litquest-classroom.png",
+    badge: "Active Curiosity",
     annualFee: "",
     termFee: ""
   },
   {
     id: "junior-kg",
     name: "Junior KG",
-    subtitle: "Igniting Creative Expression & Structured Logic",
-    ageGroup: "Age Group Placeholder",
-    timing: "Program Timing Placeholder",
-    teacherRatio: "Low student-teacher ratio",
-    description: "Junior KG introduces children to structured literacy, bilingual expression, hands-on scientific experimentation, and early numeracy. Children work in small collaborative groups to solve real-world problems through hands-on projects.",
+    subtitle: "Connecting ideas, logic, and friends.",
+    ageGroup: "4 to 5 Years",
+    timing: "9:00 AM to 1:00 PM",
+    teacherRatio: "Small groups with dedicated attention",
+    description: "Junior KG children dive deeper into letter blends, basic numbers, and small science experiments. Working with classmates, they practice talking about their thoughts and solving simple puzzles together.",
     keyOutcomes: [
-      "Blended phonics decoding & early three-letter reading",
-      "Addition fundamentals & quantitative comparison",
-      "Introductory STEM experiments (Sink/Float, Plant life cycle)",
-      "Bilingual conversational fluency in English & Hindi"
+      "Reading simple words and speaking confidently",
+      "Comparing sizes, weights, and simple grouping",
+      "Observing natural cycles, like how plants grow",
+      "Telling stories and sharing ideas with friends"
     ],
     dailyHighlights: [
-      "Junior STEM Lab Experiments",
-      "Guided Journaling & Creative Drawing",
-      "Rhythm, Percussion & Movement Studio",
-      "Outdoor Athletics & Balance Track"
+      "Mini Science Experiments",
+      "Drawing and Painting Journeys",
+      "Dance, Beats, and Rhythm Play",
+      "Obstacle Course and Balancing Games"
     ],
-    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
-    badge: "Creative Logic",
+    image: "/heureka-curriculum.png",
+    badge: "Creative Thinking",
     annualFee: "",
     termFee: ""
   },
   {
     id: "senior-kg",
     name: "Senior KG",
-    subtitle: "Empowering Independent Thinkers for Grade 1 Readiness",
-    ageGroup: "Age Group Placeholder",
-    timing: "Program Timing Placeholder",
-    teacherRatio: "Low student-teacher ratio",
-    description: "Senior KG prepares children for seamless transition into top CBSE, ICSE, and IB schools. Focus areas include fluent sentence reading, mathematical problem-solving, expressive public speaking, and digital literacy safety.",
+    subtitle: "Growing into confident learners.",
+    ageGroup: "5 to 6 Years",
+    timing: "9:00 AM to 1:00 PM",
+    teacherRatio: "Small groups with dedicated attention",
+    description: "Senior KG prepares children for their next school steps. We focus on reading short stories, addition concepts, public speaking, and building social confidence in a warm, encouraging classroom.",
     keyOutcomes: [
-      "Fluent storybook reading & creative sentence composition",
-      "Double-digit numeracy, pattern logic & time concepts",
-      "Confidence in stage presentation & show-and-tell",
-      "Critical thinking through inquiry-based research projects"
+      "Reading simple books and writing short notes",
+      "Simple math addition and telling time basics",
+      "Speaking clearly to a group with confidence",
+      "Working happily in teams on small projects"
     ],
     dailyHighlights: [
-      "Public Speaking & Drama Workshop",
-      "Math Manipulatives & Logic Puzzles",
-      "Art & Clay Studio Creation",
-      "Graduation Capstone Project Prep"
+      "Show and Tell Speaking Circle",
+      "Math Puzzles and Counting games",
+      "Pottery, Clay, and Art Crafts",
+      "Graduation Class Activities"
     ],
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
-    badge: "Grade 1 Ready",
+    image: "/kid-whiteboard.png",
+    badge: "Ready for Grade 1",
     annualFee: "",
     termFee: ""
   },
   {
     id: "daycare",
-    name: "Extended Daycare & Enrichment",
-    subtitle: "A Safe, Warm Home Away from Home",
-    ageGroup: "Age Group Placeholder",
-    timing: "Program Timing Placeholder",
-    teacherRatio: "Low student-teacher ratio",
-    description: "Designed for working parents seeking an uncompromising care environment. Includes chef-prepared hot organic lunch, peaceful sleeping nooks with climate control, homework guidance, and evening hobby workshops.",
+    name: "Daycare & Activity Nook",
+    subtitle: "A safe, loving home away from home.",
+    ageGroup: "1.5 to 8 Years",
+    timing: "9:00 AM to 6:00 PM",
+    teacherRatio: "Close personal care and supervision",
+    description: "Our daycare is a warm space for children while parents work. We serve fresh, simple meals, provide quiet nap rooms, help with homework, and organize hobby circles like craft, yoga, and drawing.",
     keyOutcomes: [
-      "Balanced rest cycles in peaceful, sanitized sleeping suites",
-      "Supervised homework and reading time",
-      "Enrichment activities: Chess, Karate, Classical Dance, Pottery",
-      "Hot, nutritious, nutritionist-approved evening snacks"
+      "Resting comfortably in quiet, clean nap rooms",
+      "Doing homework and reading books with guidance",
+      "Enjoying hobby classes, drawing, and games",
+      "Learning to share snacks and speak politely"
     ],
     dailyHighlights: [
-      "Hot Organic Lunch & Table Manner Coaching",
-      "Peaceful Nap Hour in Soundproof Suite",
-      "Evening Hobby Class Rotations",
-      "Supervised Play & Story Circle"
+      "Warm Lunch and Kitchen Manners",
+      "Quiet Rest and Nap Time",
+      "Hobby Rotations and Art Circles",
+      "Outdoor Games and Afternoon Stories"
     ],
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop",
-    badge: "Working Parent Care",
+    image: "/kid-whiteboard.png",
+    badge: "Loving After-school Care",
     annualFee: "",
     termFee: ""
   }
@@ -161,51 +161,51 @@ export const PROGRAMS_DATA: ProgramItem[] = [
 
 export const DAY_ROUTINE: DayRoutineStep[] = [
   {
-    time: "Time Placeholder",
+    time: "09:00 AM",
     title: "Warm Welcome",
-    description: "Children are greeted individually by teachers with warm smiles, temperature checks, and gentle hand sanitization before entering their cozy classrooms.",
+    description: "Teachers greet each child individually with warm smiles, helping them put away their bags and settle in comfortably.",
     category: "welcome",
     iconName: "Sun"
   },
   {
-    time: "Time Placeholder",
-    title: "Morning Circle & Mindfulness",
-    description: "Greeting songs, calendar updates, weather station check, and gentle breathing exercises to ground focus for the day.",
+    time: "09:15 AM",
+    title: "Morning Circle & Music",
+    description: "We sing morning songs, discuss the weather, and do light, calming stretches together to begin the day.",
     category: "learning",
     iconName: "Users"
   },
   {
-    time: "Time Placeholder",
-    title: "Guided Phonics & Math Learning",
-    description: "Small group rotations utilizing tactile Montessori materials, letter tracing cards, and counting blocks with direct teacher feedback.",
+    time: "10:00 AM",
+    title: "Hands-on Phonics & Math",
+    description: "Children play with tactile alphabet blocks, count colorful beads, and practice tracing with teacher guidance.",
     category: "learning",
     iconName: "BookOpen"
   },
   {
-    time: "Time Placeholder",
-    title: "Organic Snack & Social Etiquette",
-    description: "Fresh seasonal fruits, dry fruits, and warm milk served in an elegant dining nook, teaching independence and polite table manners.",
+    time: "11:15 AM",
+    title: "Healthy Snack & Chat",
+    description: "We wash our hands and eat fresh fruit or light snacks together, practicing good table manners and sharing.",
     category: "nutrition",
     iconName: "Coffee"
   },
   {
-    time: "Time Placeholder",
-    title: "Outdoor Play & Green Exploration",
-    description: "Rubberized play turf, sensory sand pits, splash streams, and cycling tracks designed for gross-motor freedom under close supervision.",
+    time: "11:45 AM",
+    title: "Outdoor Play & Garden Time",
+    description: "Children run, cycle on safe tricycles, and explore our small plant patch under close teacher supervision.",
     category: "play",
     iconName: "Trees"
   },
   {
-    time: "Time Placeholder",
-    title: "Creative Arts, Music & STEM Lab",
-    description: "Expressive sessions alternating daily between clay modeling, pottery, percussion rhythm, dramatic play, or junior scientific experiments.",
+    time: "12:15 PM",
+    title: "Art, Clay & Creative Play",
+    description: "We paint, shape clay, play small drums, or try simple science questions to spark creative thinking.",
     category: "creativity",
     iconName: "Palette"
   },
   {
-    time: "Time Placeholder",
-    title: "Storytelling, Reflection & Departure",
-    description: "Cozy carpet story hour, personal reflection on daily achievements, packing bags independently, and safe RFID pick-up.",
+    time: "01:00 PM",
+    title: "Story Circle & Goodbye",
+    description: "We gather on the carpet for a picture book story, pack our bags together, and wait for safe pick-up.",
     category: "welcome",
     iconName: "Heart"
   }
@@ -214,166 +214,166 @@ export const DAY_ROUTINE: DayRoutineStep[] = [
 export const FACILITIES: CampusFacility[] = [
   {
     id: "smart-classrooms",
-    title: "Architectural Smart Classrooms",
-    subtitle: "Abundant Natural Daylight & Eco-Friendly Woods",
-    description: "Designed with non-toxic birchwood furniture, low-level open shelving, acoustic insulation, interactive smart displays, and soft warm ambient lighting.",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
-    features: ["Child-safe rounded edges", "Air purifying plants", "HEPA air filtration", "Ergonomic seating"],
+    title: "Sunny Classrooms",
+    subtitle: "Bright, airy spaces with child-friendly furniture.",
+    description: "Classrooms feature large windows for natural light, low open shelves that children can easily reach, and child-safe rounded furniture.",
+    image: "/litquest-classroom.png",
+    features: ["Round-edged wooden tables", "Low shelving for independence", "Fresh air flow", "Comfortable soft carpets"],
     category: "classroom"
   },
   {
     id: "outdoor-play",
-    title: "Outdoor Adventure & Nature Trails",
-    subtitle: "Zero-Injury Soft Flooring & Organic Nature Trails",
-    description: "Features European-standard non-toxic soft rubber flooring, timber climbing frames, sand exploration table, and a mini splash pad for summer fun.",
-    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
-    features: ["Impact-absorbing EPDM flooring", "Shaded canopy play", "Organic herbal garden", "Mini tricycle track"],
+    title: "Green Outdoor Play Area",
+    subtitle: "Soft safety flooring and small nature patches.",
+    description: "Equipped with rubberized flooring to prevent scrapes, climbing frames, a sandbox, and tricycle paths for active play.",
+    image: "/heureka-curriculum.png",
+    features: ["Padded safety flooring", "Shaded climbing frames", "Herbs and flowers patch", "Mini cycling track"],
     category: "play"
   },
   {
     id: "sensory-library",
-    title: "The Wonder Nook Library",
-    subtitle: "A vast collection of children's literature",
-    description: "A serene reading sanctuary featuring plush floor pillows, treehouse reading lofts, picture audiobooks, and touch-and-feel tactile encyclopedias.",
-    image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?q=80&w=1200&auto=format&fit=crop",
-    features: ["International picture books", "Bilingual storytelling corner", "Audiobook listening pods", "Quiet reflection space"],
+    title: "Cozy Story Book Library",
+    subtitle: "A quiet space to discover stories.",
+    description: "A comfortable space filled with picture books, soft pillows, audiobooks, and texture cards to encourage a love for reading.",
+    image: "/kid-whiteboard.png",
+    features: ["Colorful picture books", "Soft reading pillows", "Touch-and-feel books", "Quiet story corner"],
     category: "learning"
   },
   {
     id: "security-tech",
-    title: "Comprehensive Security Systems",
-    subtitle: "Ensuring child safety with modern technology",
-    description: "Equipped with High-Definition CCTV cameras, RFID biometric gates, 24/7 armed security personnel, and strict visitor policies.",
-    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
-    features: ["Secure campus perimeter", "RFID student attendance tags", "Background-verified staff", "Panic alarm system"],
+    title: "Secure Campus",
+    subtitle: "Ensuring child safety at all times.",
+    description: "Equipped with CCTV coverage, a secure check-in system, verified staff members, and clear safety rules.",
+    image: "/litquest-classroom.png",
+    features: ["Fully fenced campus", "CCTV check-in security", "First-aid certified staff", "Safe pick-up gates"],
     category: "safety"
   },
   {
     id: "nutrition-dining",
-    title: "Organic Kitchen & Dining Pavilion",
-    subtitle: "Nutritionist-Designed Meals Freshly Prepared Daily",
-    description: "Zero refined sugar, zero preservatives. Organic whole grains, farm-fresh milk, seasonal fruits, and customized meal plans for dietary allergies.",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
-    features: ["100% In-house organic kitchen", "Pediatric nutritionist approved", "Allergy management protocols", "Filtered RO water stations"],
+    title: "Simple, Healthy Meals",
+    subtitle: "Fresh snacks prepared daily in a clean kitchen.",
+    description: "We serve simple, fresh snacks free from artificial colors or heavy spices, keeping food allergies and preferences in mind.",
+    image: "/word-wheel.png",
+    features: ["Clean, visible kitchen", "Allergy-safe preparation", "RO water filter stations", "Fresh fruits and warm milk"],
     category: "health"
   }
 ];
 
 export const FACULTY_MEMBERS: FacultyMember[] = [
   {
-    name: "Founder Name Placeholder",
-    role: "Founder & Director of Pedagogy",
-    qualification: "Qualifications Placeholder",
-    experience: "Experience Placeholder",
-    bio: "Passionate about creating environments where children retain their innate wonder. Dedicated to exceptional early brain development frameworks.",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
-    specialty: "Curriculum Design & Child Brain Mapping"
+    name: "Mrs. Harsha Gupta",
+    role: "Founder & Pedagogy Director",
+    qualification: "M.A. in Child Development",
+    experience: "10+ Years",
+    bio: "Harsha believes that school should feel like a second home. She is dedicated to creating a warm, supportive space where children feel safe to learn.",
+    image: "/heureka-curriculum.png",
+    specialty: "Early Childhood Pedagogy & Care"
   },
   {
-    name: "Principal Name Placeholder",
+    name: "Mrs. Shalini Sharma",
     role: "Principal & Head of School",
-    qualification: "Qualifications Placeholder",
-    experience: "Experience Placeholder",
-    bio: "Specializes in emotional intelligence in early years, ensuring every child feels valued, safe, and encouraged to express themselves freely.",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
-    specialty: "Montessori Methodology & Emotional Safety"
+    qualification: "B.Ed. with Child Psychology specialization",
+    experience: "8+ Years",
+    bio: "Shalini coordinates daily activities, focusing on child safety, emotional comfort, and ensuring every child is greeted with a warm smile.",
+    image: "/litquest-classroom.png",
+    specialty: "Interactive Storytelling & Child Comfort"
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: "t1",
-    parentName: "Parent Name Placeholder",
-    childNameAndGrade: "Parents of Child (Senior KG)",
-    locality: "Locality Placeholder",
-    quote: "This school is beautifully designed and maintains a very calm, nurturing environment. The teachers are incredible and our child has grown so confident. Highly recommend for any parent looking for a premium experience.",
-    avatar: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
+    parentName: "Neha Sharma",
+    childNameAndGrade: "Parent of Aarav (Senior KG)",
+    locality: "Thatipur, Gwalior",
+    quote: "The school is beautifully run and feels incredibly warm and secure. The teachers are very patient, and my son Aarav is always excited to go. I highly recommend it.",
+    avatar: "/kid-whiteboard.png",
     rating: 5,
-    date: "Date Placeholder"
+    date: "April 2026"
   },
   {
     id: "t2",
-    parentName: "Parent Name Placeholder",
-    childNameAndGrade: "Parents of Child (Nursery)",
-    locality: "Locality Placeholder",
-    quote: "The focus on organic meals, natural wooden toys, and personalized attention makes this the best decision we made for our daughter's early years.",
-    avatar: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
+    parentName: "Rajesh Dixit",
+    childNameAndGrade: "Parent of Pihu (Nursery)",
+    locality: "Gandhi Road, Gwalior",
+    quote: "We love the focus on simple, healthy snacks and the cozy story library. Our daughter Pihu has become much more expressive and independent.",
+    avatar: "/litquest-classroom.png",
     rating: 5,
-    date: "Date Placeholder"
+    date: "May 2026"
   },
   {
     id: "t3",
-    parentName: "Parent Name Placeholder",
-    childNameAndGrade: "Parents of Child (Playgroup)",
-    locality: "Locality Placeholder",
-    quote: "The daycare facility is a godsend for working professionals. They provide a safe, loving environment with engaging activities. The transport bus is extremely reliable.",
-    avatar: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
+    parentName: "Anjali Saxena",
+    childNameAndGrade: "Parent of Kabir (Playgroup)",
+    locality: "Balwant Nagar, Gwalior",
+    quote: "The daycare facilities are exceptionally clean and safe. The teachers help with homework and organize beautiful drawing workshops.",
+    avatar: "/heureka-curriculum.png",
     rating: 5,
-    date: "Date Placeholder"
+    date: "June 2026"
   }
 ];
 
 export const LATEST_NEWS: NewsEvent[] = [
   {
     id: "news-1",
-    title: "News Event Placeholder 1",
+    title: "Admissions Open for 2026-27",
     category: "Admission",
-    date: "Date Placeholder",
-    excerpt: "Event excerpt placeholder. Book a guided campus visit with our pedagogy experts.",
-    image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=1200&auto=format&fit=crop"
+    date: "July 2026",
+    excerpt: "Admissions are open for Playgroup, Nursery, and KG programs. Feel free to schedule a walkthrough of our classrooms.",
+    image: "/litquest-classroom.png"
   },
   {
     id: "news-2",
-    title: "News Event Placeholder 2",
-    category: "Event",
-    date: "Date Placeholder",
-    excerpt: "Event excerpt placeholder describing recent creative activities.",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1200&auto=format&fit=crop"
+    title: "Creative Painting and Art Day",
+    category: "Activity",
+    date: "July 2026",
+    excerpt: "Children enjoyed a beautiful day painting, hand-printing, and constructing paper crafts in our creative art zone.",
+    image: "/word-wheel.png"
   },
   {
     id: "news-3",
-    title: "News Event Placeholder 3",
-    category: "Celebration",
-    date: "Date Placeholder",
-    excerpt: "Event excerpt placeholder highlighting community engagement and cultural celebrations.",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1200&auto=format&fit=crop"
+    title: "Parents Storytelling Circle",
+    category: "Community",
+    date: "June 2026",
+    excerpt: "A warm storytelling workshop bringing families and educators together to discuss reading aloud to children.",
+    image: "/heureka-curriculum.png"
   }
 ];
 
 export const BUS_ROUTES_GWALIOR: BusRoute[] = [
   {
-    routeNumber: "Route 1",
-    areaName: "Area Name Placeholder",
-    stops: ["Stop 1", "Stop 2", "Stop 3"],
-    pickupTime: "Pickup Time",
-    dropTime: "Drop Time",
-    supervisorPhone: "Phone Placeholder"
+    routeNumber: "Route A",
+    areaName: "Thatipur, Gandhi Road, Patel Nagar",
+    stops: ["Thatipur Square", "Gandhi Road Crossing", "Patel Nagar Gate"],
+    pickupTime: "8:15 AM",
+    dropTime: "1:45 PM",
+    supervisorPhone: "+91-8056286765"
   },
   {
-    routeNumber: "Route 2",
-    areaName: "Area Name Placeholder",
-    stops: ["Stop 1", "Stop 2", "Stop 3"],
-    pickupTime: "Pickup Time",
-    dropTime: "Drop Time",
-    supervisorPhone: "Phone Placeholder"
+    routeNumber: "Route B",
+    areaName: "DD Nagar, Pinto Park, Morar",
+    stops: ["DD Nagar Gate 2", "Pinto Park Chowk", "Morar Circle"],
+    pickupTime: "8:00 AM",
+    dropTime: "2:00 PM",
+    supervisorPhone: "+91-8056286765"
   }
 ];
 
 export const DOWNLOADS_LIST: DownloadItem[] = [
   {
     id: "d1",
-    title: "Academic Calendar Placeholder",
-    category: "Calendar",
-    fileSize: "1.4 MB",
-    date: "Date Placeholder",
+    title: "EuroKids Academic Prospectus",
+    category: "Prospectus",
+    fileSize: "1.8 MB",
+    date: "Academic Session 2026",
     downloadUrl: "#"
   },
   {
     id: "d2",
-    title: "School Prospectus Placeholder",
-    category: "Circular",
-    fileSize: "3.2 MB",
-    date: "Date Placeholder",
+    title: "Balwant Nagar Center Admission Form",
+    category: "Application",
+    fileSize: "1.2 MB",
+    date: "Academic Session 2026",
     downloadUrl: "#"
   }
 ];
@@ -381,54 +381,53 @@ export const DOWNLOADS_LIST: DownloadItem[] = [
 export const GALLERY_ITEMS: GalleryImage[] = [
   {
     id: "g1",
-    title: "Architectural Exterior",
+    title: "Classroom Learning",
     category: "Campus",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
-    caption: "Designed with natural birchwood and beautiful outdoor spaces."
+    image: "/litquest-classroom.png",
+    caption: "A bright, airy classroom designed with comfortable seating and open shelves."
   },
   {
     id: "g2",
-    title: "Montessori Tactile Discovery",
+    title: "Interactive Story Circle",
     category: "Classrooms",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
-    caption: "Children engaging in self-directed sensory exploration with natural materials."
+    image: "/kid-whiteboard.png",
+    caption: "Children tracing letter sounds and word families on the interactive board."
   },
   {
     id: "g3",
-    title: "STEM & Science Exploration",
-    category: "Events",
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
-    caption: "Hands-on experiments with guided mentorship."
+    title: "Heureka Thinking Curriculum",
+    category: "Curriculum",
+    image: "/heureka-curriculum.png",
+    caption: "A view of the Heureka Visible Thinking program framework."
   },
   {
     id: "g4",
-    title: "Storytelling Nook",
+    title: "Word Wheel Practice",
     category: "Classrooms",
-    image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?q=80&w=1200&auto=format&fit=crop",
-    caption: "Quiet cozy carpet time encouraging a lifelong love for books and imagination."
+    image: "/word-wheel.png",
+    caption: "Toddlers learning phonics patterns using hands-on sorting tools."
   }
 ];
 
 export const ADMISSION_FAQS = [
   {
-    question: "What is the entry age criteria for Playgroup and Nursery?",
-    answer: "Please contact our admissions office to discuss the ideal age and program fit for your child. We conduct gentle, informal interactions to ensure readiness."
+    question: "What is the starting age for Playgroup and Nursery?",
+    answer: "Playgroup children start from 1.8 years. Nursery starts from 3 years. We arrange a gentle welcome interaction to ensure the program matches your child's developmental step."
   },
   {
-    question: "How does the school ensure child safety and staff background verification?",
-    answer: "All teaching faculty and support staff undergo mandatory verification and background checks. Our campus features secure gate control, constant supervision, and pediatric first-aid certified staff."
+    question: "How do you check child safety and staff background?",
+    answer: "Every teacher and support staff member undergoes thorough police verification. Our campus is fully fenced with CCTV oversight and supervised entry at the gates."
   },
   {
-    question: "What is the fee payment schedule and are there any hidden charges?",
-    answer: "We follow a transparent policy. Please contact our admissions desk to request the complete fee structure and details on our inclusions."
+    question: "Can we request a details breakdown of the fee schedule?",
+    answer: "Yes. Our fees are fully transparent without hidden costs. Please reach out to our desk, and we will share the details of the schedule with you."
   },
   {
-    question: "What food is provided at the school and how are dietary allergies handled?",
-    answer: "We provide high-quality, nutritious mid-morning snacks prepared fresh in our sanitized kitchen. Customized alternatives are prepared for children with specific dietary sensitivities."
+    question: "How do you manage meals and specific food sensitivities?",
+    answer: "We serve simple, fresh mid-morning snacks. If your child has allergies or specific food requirements, please let us know so we can prepare alternatives."
   },
   {
-    question: "Do you offer school bus transport?",
-    answer: "Yes, our transport system covers major surrounding areas. Each vehicle is equipped with safety measures and dedicated supervision."
+    question: "Is there a safe transport bus service?",
+    answer: "Yes, we operate safe buses across major parts of Gwalior. A dedicated supervisor travels on every route to look after the children."
   }
 ];
-
