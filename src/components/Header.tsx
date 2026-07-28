@@ -63,8 +63,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3 focus:outline-none group text-left"
           >
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg playful-btn">
-              EK
+            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-slate-900 shadow-sm flex items-center justify-center bg-white">
+              <img src="/eurokids-logo.jpg" alt="EuroKids Logo" className="w-full h-full object-cover scale-110" />
             </div>
             <div className="flex flex-col text-left text-[#0F172A]">
               <span className="font-sans font-bold text-2xl leading-none tracking-tight text-primary">EuroKids</span>
@@ -130,8 +130,8 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <div className="flex items-center justify-between p-6">
               <div className="flex items-center gap-3 text-left">
-                <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">
-                  EK
+                <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-slate-900 flex items-center justify-center bg-white">
+                  <img src="/eurokids-logo.jpg" alt="EuroKids Logo" className="w-full h-full object-cover scale-110" />
                 </div>
                 <div className="flex flex-col text-[#0F172A]">
                   <span className="font-sans font-bold text-2xl leading-none text-primary">EuroKids</span>
