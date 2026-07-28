@@ -107,24 +107,6 @@ export const EnquiryDrawer: React.FC<EnquiryDrawerProps> = ({ isOpen, onClose })
               </div>
 
               <div>
-                <label className="block text-slate-700 font-bold mb-1">Gwalior Locality</label>
-                <select
-                  value={formData.locality}
-                  onChange={(e) => setFormData({ ...formData, locality: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 bg-white text-slate-900 focus:ring-2 focus:ring-slate-900 focus:outline-none"
-                >
-                  <option value="City Centre">City Centre</option>
-                  <option value="Lashkar">Lashkar</option>
-                  <option value="Morar">Morar / Cantt</option>
-                  <option value="Thatipur">Thatipur</option>
-                  <option value="CP Colony">CP Colony</option>
-                  <option value="DD Nagar">DD Nagar</option>
-                  <option value="Vijay Nagar">Vijay Nagar</option>
-                  <option value="Other Area">Other Area in Gwalior</option>
-                </select>
-              </div>
-
-              <div>
                 <label className="block text-slate-700 font-bold mb-1">Child's Age Group *</label>
                 <select
                   value={formData.childAgeGroup}
@@ -145,7 +127,7 @@ export const EnquiryDrawer: React.FC<EnquiryDrawerProps> = ({ isOpen, onClose })
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="e.g. Please share admission details and bus route options for Thatipur."
+                  placeholder="e.g. Please share admission details and bus route options."
                   className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 bg-white text-slate-900 focus:ring-2 focus:ring-slate-900 focus:outline-none"
                 />
               </div>
@@ -168,7 +150,7 @@ export const EnquiryDrawer: React.FC<EnquiryDrawerProps> = ({ isOpen, onClose })
             <Phone className="w-3.5 h-3.5 text-amber-500" /> Helpline: {SCHOOL_INFO.phone}
           </p>
           <p className="flex items-center gap-1.5">
-            <MapPin className="w-3.5 h-3.5 text-slate-400" /> City Centre, Gwalior MP
+            <MapPin className="w-3.5 h-3.5 text-slate-400" /> Balwant Nagar, Gwalior MP
           </p>
         </div>
 
