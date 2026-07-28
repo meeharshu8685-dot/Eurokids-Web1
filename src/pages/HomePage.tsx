@@ -140,8 +140,8 @@ export const HomePage: React.FC<HomePageProps> = ({
               className="absolute -bottom-8 -left-8 bg-white p-6 rounded-[24px] shadow-xl border-3 border-slate-900 animate-float"
             >
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-accent">
-                  <Sun className="w-6 h-6" />
+                <div className="w-12 h-12 bg-secondary rounded-full overflow-hidden border-2 border-slate-900 flex items-center justify-center bg-white">
+                  <img src="/eurokids-logo.jpg" alt="EuroKids Mascot" className="w-full h-full object-cover scale-110" />
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-primary leading-none">15+</p>
