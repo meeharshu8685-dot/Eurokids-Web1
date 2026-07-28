@@ -90,18 +90,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onOpenBookVisit }) =
         </div>
       </section>
 
-      {/* 3. CTA */}
-      <section className="px-6 lg:px-16 max-w-[1200px] mx-auto text-center bg-[#F8FAFC] rounded-[40px] py-24">
-        <h2 className="text-3xl lg:text-5xl text-[#0F172A] leading-tight mb-10 max-w-2xl mx-auto">
-          Not sure which program is right for your child?
-        </h2>
-        <button
-          onClick={onOpenBookVisit}
-          className="px-8 py-4 bg-[#4338CA] text-white font-sans font-semibold rounded-full hover:bg-[#0EA5E9] transition-colors"
-        >
-          Speak with an educator
-        </button>
-      </section>
+
 
     </div>
   );
