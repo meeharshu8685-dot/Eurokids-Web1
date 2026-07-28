@@ -52,7 +52,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Water and Paint Exploration",
       "Healthy Fruit and Snack Break"
     ],
-    image: "/word-wheel.png",
+    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
     badge: "First Steps",
     annualFee: "",
     termFee: ""
@@ -77,7 +77,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Blocks, Matching, and Puzzles",
       "Mud Play and Seed Planting"
     ],
-    image: "/litquest-classroom.png",
+    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
     badge: "Active Curiosity",
     annualFee: "",
     termFee: ""
@@ -102,7 +102,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Dance, Beats, and Rhythm Play",
       "Obstacle Course and Balancing Games"
     ],
-    image: "/heureka-curriculum.png",
+    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
     badge: "Creative Thinking",
     annualFee: "",
     termFee: ""
@@ -127,7 +127,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Pottery, Clay, and Art Crafts",
       "Graduation Class Activities"
     ],
-    image: "/kid-whiteboard.png",
+    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
     badge: "Ready for Grade 1",
     annualFee: "",
     termFee: ""
@@ -152,7 +152,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Hobby Rotations and Art Circles",
       "Outdoor Games and Afternoon Stories"
     ],
-    image: "/kid-whiteboard.png",
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop",
     badge: "Loving After-school Care",
     annualFee: "",
     termFee: ""
@@ -217,7 +217,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Sunny Classrooms",
     subtitle: "Bright, airy spaces with child-friendly furniture.",
     description: "Classrooms feature large windows for natural light, low open shelves that children can easily reach, and child-safe rounded furniture.",
-    image: "/litquest-classroom.png",
+    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
     features: ["Round-edged wooden tables", "Low shelving for independence", "Fresh air flow", "Comfortable soft carpets"],
     category: "classroom"
   },
@@ -226,7 +226,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Green Outdoor Play Area",
     subtitle: "Soft safety flooring and small nature patches.",
     description: "Equipped with rubberized flooring to prevent scrapes, climbing frames, a sandbox, and tricycle paths for active play.",
-    image: "/heureka-curriculum.png",
+    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
     features: ["Padded safety flooring", "Shaded climbing frames", "Herbs and flowers patch", "Mini cycling track"],
     category: "play"
   },
@@ -235,7 +235,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Cozy Story Book Library",
     subtitle: "A quiet space to discover stories.",
     description: "A comfortable space filled with picture books, soft pillows, audiobooks, and texture cards to encourage a love for reading.",
-    image: "/kid-whiteboard.png",
+    image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?q=80&w=1200&auto=format&fit=crop",
     features: ["Colorful picture books", "Soft reading pillows", "Touch-and-feel books", "Quiet story corner"],
     category: "learning"
   },
@@ -244,7 +244,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Secure Campus",
     subtitle: "Ensuring child safety at all times.",
     description: "Equipped with CCTV coverage, a secure check-in system, verified staff members, and clear safety rules.",
-    image: "/litquest-classroom.png",
+    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
     features: ["Fully fenced campus", "CCTV check-in security", "First-aid certified staff", "Safe pick-up gates"],
     category: "safety"
   },
@@ -253,7 +253,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Simple, Healthy Meals",
     subtitle: "Fresh snacks prepared daily in a clean kitchen.",
     description: "We serve simple, fresh snacks free from artificial colors or heavy spices, keeping food allergies and preferences in mind.",
-    image: "/word-wheel.png",
+    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
     features: ["Clean, visible kitchen", "Allergy-safe preparation", "RO water filter stations", "Fresh fruits and warm milk"],
     category: "health"
   }
@@ -266,7 +266,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     qualification: "M.A. in Child Development",
     experience: "10+ Years",
     bio: "Harsha believes that school should feel like a second home. She is dedicated to creating a warm, supportive space where children feel safe to learn.",
-    image: "/heureka-curriculum.png",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
     specialty: "Early Childhood Pedagogy & Care"
   }
 ];
@@ -278,7 +278,7 @@ export const TESTIMONIALS: Testimonial[] = [
     childNameAndGrade: "Parent of Aarav (Senior KG)",
     locality: "Thatipur, Gwalior",
     quote: "The school is beautifully run and feels incredibly warm and secure. The teachers are very patient, and my son Aarav is always excited to go. I highly recommend it.",
-    avatar: "/kid-whiteboard.png",
+    avatar: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
     rating: 5,
     date: "April 2026"
   },
@@ -288,7 +288,7 @@ export const TESTIMONIALS: Testimonial[] = [
     childNameAndGrade: "Parent of Pihu (Nursery)",
     locality: "Gandhi Road, Gwalior",
     quote: "We love the focus on simple, healthy snacks and the cozy story library. Our daughter Pihu has become much more expressive and independent.",
-    avatar: "/litquest-classroom.png",
+    avatar: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
     rating: 5,
     date: "May 2026"
   },
@@ -298,7 +298,7 @@ export const TESTIMONIALS: Testimonial[] = [
     childNameAndGrade: "Parent of Kabir (Playgroup)",
     locality: "Balwant Nagar, Gwalior",
     quote: "The daycare facilities are exceptionally clean and safe. The teachers help with homework and organize beautiful drawing workshops.",
-    avatar: "/heureka-curriculum.png",
+    avatar: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
     rating: 5,
     date: "June 2026"
   }
@@ -311,7 +311,7 @@ export const LATEST_NEWS: NewsEvent[] = [
     category: "Admission",
     date: "July 2026",
     excerpt: "Admissions are open for Playgroup, Nursery, and KG programs. Feel free to schedule a walkthrough of our classrooms.",
-    image: "/litquest-classroom.png"
+    image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=1200&auto=format&fit=crop"
   },
   {
     id: "news-2",
@@ -319,7 +319,7 @@ export const LATEST_NEWS: NewsEvent[] = [
     category: "Activity",
     date: "July 2026",
     excerpt: "Children enjoyed a beautiful day painting, hand-printing, and constructing paper crafts in our creative art zone.",
-    image: "/word-wheel.png"
+    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1200&auto=format&fit=crop"
   },
   {
     id: "news-3",
@@ -327,7 +327,7 @@ export const LATEST_NEWS: NewsEvent[] = [
     category: "Community",
     date: "June 2026",
     excerpt: "A warm storytelling workshop bringing families and educators together to discuss reading aloud to children.",
-    image: "/heureka-curriculum.png"
+    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1200&auto=format&fit=crop"
   }
 ];
 
