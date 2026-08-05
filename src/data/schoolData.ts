@@ -131,6 +131,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
     badge: "Ready for Grade 1",
     annualFee: "",
     termFee: ""
+  }
 ];
 
 export const DAY_ROUTINE: DayRoutineStep[] = [
