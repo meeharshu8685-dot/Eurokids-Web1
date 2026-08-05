@@ -14,10 +14,10 @@ export const SCHOOL_INFO = {
   name: "EuroKids Balwant Nagar",
   tagline: "A happy place where young children feel at home while they learn.",
   address: "E-46-A, Balwant Nagar, Gandhi Road, Thatipur, Gwalior, Madhya Pradesh - 474011",
-  phone: "+91-8056286765",
-  altPhone: "+91-8056286765",
+  phone: "+91-9183686765",
+  altPhone: "+91-9183686765",
   email: "Eurokidsccgwl@gmail.com",
-  whatsapp: "+91-8056286765",
+  whatsapp: "919183686765",
   officeHours: "9:00 AM – 5:00 PM (Monday to Saturday)",
   established: 2018,
   city: "Gwalior, Madhya Pradesh",
@@ -313,7 +313,7 @@ export const BUS_ROUTES_GWALIOR: BusRoute[] = [
     stops: ["Thatipur Square", "Gandhi Road Crossing", "Patel Nagar Gate"],
     pickupTime: "8:15 AM",
     dropTime: "1:45 PM",
-    supervisorPhone: "+91-8056286765"
+    supervisorPhone: "+91-9183686765"
   },
   {
     routeNumber: "Route B",
@@ -321,7 +321,7 @@ export const BUS_ROUTES_GWALIOR: BusRoute[] = [
     stops: ["DD Nagar Gate 2", "Pinto Park Chowk", "Morar Circle"],
     pickupTime: "8:00 AM",
     dropTime: "2:00 PM",
-    supervisorPhone: "+91-8056286765"
+    supervisorPhone: "+91-9183686765"
   }
 ];
 

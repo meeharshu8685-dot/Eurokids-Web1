@@ -50,6 +50,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onOpenBookVisit }) =
                   src={prog.image} 
                   alt={prog.name} 
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
                 />
               </motion.div>
               

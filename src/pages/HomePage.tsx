@@ -27,11 +27,20 @@ export const HomePage: React.FC<HomePageProps> = ({
     "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=2000&auto=format&fit=crop"
   ];
 
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
     }, 5000);
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const testimonialInterval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % TESTIMONIALS.length);
+    }, 7000);
+    return () => clearInterval(testimonialInterval);
   }, []);
 
   return (
@@ -50,6 +59,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               src={heroImages[currentSlide]} 
               alt="EuroKids School Environment" 
               className="absolute inset-0 w-full h-full object-cover object-top"
+              onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
             />
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />
@@ -152,6 +162,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop" 
                 alt="Teacher reading to child" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
+                onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
               />
             </div>
             {/* Floating badge */}
@@ -160,7 +171,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             >
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-secondary rounded-full overflow-hidden border-2 border-slate-900 flex items-center justify-center bg-white">
-                  <img src="/eurokids-logo.jpg" alt="EuroKids Mascot" className="w-full h-full object-cover scale-110" />
+                  <img src="/eurokids-logo.jpg" alt="EuroKids Mascot" className="w-full h-full object-cover scale-110" onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }} />
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-primary leading-none">15+</p>
@@ -191,6 +202,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   src="/eurokids-interaction.jpg" 
                   alt="Parents visiting school" 
                   className="w-full h-full object-cover"
+                  onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
                 />
               </motion.div>
             </div>
@@ -240,6 +252,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                  src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1200&auto=format&fit=crop" 
                  alt="Child painting" 
                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
+                 onError={(e) => { e.currentTarget.src = '/eurokids-writing.jpg'; }}
                />
              </div>
              {/* Decorative dot */}
@@ -304,6 +317,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                      src={prog.image} 
                      alt={prog.name} 
                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                     onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
                    />
                  </div>
                  <div className="px-2 pb-4">
@@ -358,6 +372,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 src="https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop" 
                 alt="Classroom" 
                 className="w-full h-full object-cover"
+                onError={(e) => { e.currentTarget.src = '/eurokids-writing.jpg'; }}
               />
             </motion.div>
             <motion.div 
@@ -371,6 +386,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 src="/eurokids-writing.jpg" 
                 alt="Outdoor play" 
                 className="w-full h-full object-cover rounded-[20px]"
+                onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
               />
             </motion.div>
           </div>
@@ -404,6 +420,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     src={img.image} 
                     alt={img.title} 
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
+                    onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500" />
                 </motion.div>
@@ -415,38 +432,57 @@ export const HomePage: React.FC<HomePageProps> = ({
 
       {/* 8. PARENT TESTIMONIALS */}
       <section className="py-24 lg:py-32 px-6 lg:px-16 max-w-[1200px] mx-auto text-center relative bg-dot-pattern">
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="relative"
-        >
-          {/* Decorative quote marks */}
-          <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-[120px] font-sans text-primary/10 leading-none -z-10 select-none">“</div>
-          
-          <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-10 border-4 border-slate-900 shadow-lg">
-            <img 
-              src={TESTIMONIALS[0].avatar} 
-              alt={TESTIMONIALS[0].parentName} 
-              className="w-full h-full object-cover"
-            />
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[120px] font-sans text-primary/10 leading-none z-0 select-none">“</div>
+        
+        <div className="relative z-10 min-h-[400px] flex flex-col justify-center">
+          <AnimatePresence mode="wait">
+            <motion.div 
+              key={currentTestimonial}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center"
+            >
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-10 border-4 border-slate-900 shadow-lg bg-slate-100">
+                <img 
+                  src={TESTIMONIALS[currentTestimonial].avatar} 
+                  alt={TESTIMONIALS[currentTestimonial].parentName} 
+                  className="w-full h-full object-cover"
+                  onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
+                />
+              </div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl leading-snug lg:leading-tight text-[#0F172A] mb-8 max-w-4xl font-serif">
+                "{TESTIMONIALS[currentTestimonial].quote}"
+              </h2>
+              <div className="flex flex-col items-center gap-1">
+                <div className="flex gap-1 text-accent mb-2">
+                  {[...Array(TESTIMONIALS[currentTestimonial].rating || 5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4" fill="currentColor" />
+                  ))}
+                </div>
+                <p className="font-sans font-bold text-primary text-lg">{TESTIMONIALS[currentTestimonial].parentName}</p>
+                <p className="font-sans text-[#475569] font-medium text-sm">{TESTIMONIALS[currentTestimonial].childNameAndGrade} • {TESTIMONIALS[currentTestimonial].locality}</p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center gap-2.5 mt-10">
+            {TESTIMONIALS.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentTestimonial(idx)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  currentTestimonial === idx 
+                    ? 'bg-primary scale-125' 
+                    : 'bg-slate-300 hover:bg-slate-400'
+                }`}
+                aria-label={`Go to testimonial ${idx + 1}`}
+              />
+            ))}
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl leading-snug lg:leading-tight text-[#0F172A] mb-12">
-            "{TESTIMONIALS[0].quote}"
-          </h2>
-          <div className="flex flex-col items-center gap-1">
-            <div className="flex gap-1 text-accent mb-2">
-              <Star className="w-4 h-4" fill="currentColor" />
-              <Star className="w-4 h-4" fill="currentColor" />
-              <Star className="w-4 h-4" fill="currentColor" />
-              <Star className="w-4 h-4" fill="currentColor" />
-              <Star className="w-4 h-4" fill="currentColor" />
-            </div>
-            <p className="font-sans font-bold text-primary text-lg">{TESTIMONIALS[0].parentName}</p>
-            <p className="font-sans text-[#475569] font-medium">{TESTIMONIALS[0].childNameAndGrade}</p>
-          </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* 9. CTA */}
@@ -461,6 +497,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=2000&auto=format&fit=crop" 
               alt="Children smiling" 
               className="w-full h-full object-cover transform scale-105"
+              onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/80 mix-blend-multiply" />
           </div>
