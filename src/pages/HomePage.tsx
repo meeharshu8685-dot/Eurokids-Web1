@@ -466,8 +466,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      </section>
-
       {/* 9. CTA */}
       <section className="py-12 lg:py-24 px-6 lg:px-16 max-w-[1600px] mx-auto relative z-10">
         <motion.div 
