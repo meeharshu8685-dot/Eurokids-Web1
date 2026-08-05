@@ -69,6 +69,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBookVisit, setActive
                 src="/eurokids-writing.jpg" 
                 alt="Teacher with children" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
               />
             </div>
             <div className="aspect-square rounded-[24px] overflow-hidden absolute -bottom-16 left-0 w-[45%] border-3 border-slate-900 bg-white p-2 z-20 hidden md:block shadow-2xl">
@@ -76,6 +77,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBookVisit, setActive
                 src="https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=800&auto=format&fit=crop" 
                 alt="Classroom" 
                 className="w-full h-full object-cover rounded-[16px]"
+                onError={(e) => { e.currentTarget.src = '/eurokids-writing.jpg'; }}
               />
             </div>
           </motion.div>
@@ -146,6 +148,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBookVisit, setActive
                   src={member.image} 
                   alt={member.name} 
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
                 />
               </div>
               <h3 className="text-2xl text-primary font-bold mb-1">{member.name}</h3>

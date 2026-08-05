@@ -443,7 +443,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   ))}
                 </div>
                 <p className="font-sans font-bold text-primary text-lg">{TESTIMONIALS[currentTestimonial].parentName}</p>
-                <p className="font-sans text-[#475569] font-medium text-sm">{TESTIMONIALS[currentTestimonial].childNameAndGrade} • {TESTIMONIALS[currentTestimonial].locality}</p>
+                <p className="font-sans text-[#475569] font-medium text-sm">{TESTIMONIALS[currentTestimonial].childNameAndGrade}</p>
               </div>
             </motion.div>
           </AnimatePresence>

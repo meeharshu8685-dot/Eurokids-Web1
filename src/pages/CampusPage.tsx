@@ -53,6 +53,7 @@ export const CampusPage: React.FC<CampusPageProps> = ({ onOpenBookVisit }) => {
                     src={fac.image} 
                     alt={fac.title} 
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
                   />
                 </div>
                 <div className="px-2">

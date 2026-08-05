@@ -98,6 +98,7 @@ export const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ onOpenBookVisit 
                 alt={act.title}
                 className="w-full h-48 object-cover"
                 referrerPolicy="no-referrer"
+                onError={(e) => { e.currentTarget.src = '/eurokids-writing.jpg'; }}
               />
               <div className="p-6 space-y-3">
                 <span className="text-[10px] font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200 uppercase tracking-wider">

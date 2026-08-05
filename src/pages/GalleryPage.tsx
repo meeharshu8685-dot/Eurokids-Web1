@@ -75,6 +75,7 @@ export const GalleryPage: React.FC = () => {
                   src={img.image} 
                   alt={img.title} 
                   className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                  onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
                 />
               </motion.div>
             ))}

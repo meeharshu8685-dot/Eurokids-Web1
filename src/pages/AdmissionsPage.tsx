@@ -63,6 +63,7 @@ export const AdmissionsPage: React.FC<AdmissionsPageProps> = ({
                 src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop" 
                 alt="Admissions" 
                 className="w-full h-full object-cover"
+                onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
               />
             </div>
           </div>
