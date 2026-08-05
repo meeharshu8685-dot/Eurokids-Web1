@@ -6,7 +6,7 @@ export type PageView =
   | 'campus' 
   | 'activities' 
   | 'gallery' 
-   
+  | 'feedbacks'
   | 'contact';
 
 export interface ProgramItem {
