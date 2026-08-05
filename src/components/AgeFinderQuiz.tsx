@@ -21,9 +21,8 @@ export const AgeFinderQuiz: React.FC<AgeFinderQuizProps> = ({ setActiveView, onO
     if (ageMonths >= 20 && ageMonths < 30) return p.id === 'playgroup';
     if (ageMonths >= 30 && ageMonths < 42) return p.id === 'nursery';
     if (ageMonths >= 42 && ageMonths < 54) return p.id === 'junior-kg';
-    if (ageMonths >= 54 && ageMonths < 68) return p.id === 'senior-kg';
-    return p.id === 'daycare';
-  }) || PROGRAMS_DATA[1];
+    return p.id === 'senior-kg';
+  }) || PROGRAMS_DATA[3];
 
   return (
     <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md">

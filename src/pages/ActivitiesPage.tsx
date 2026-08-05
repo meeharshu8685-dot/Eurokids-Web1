@@ -58,7 +58,7 @@ export const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ onOpenBookVisit 
       category: "Physical Agility",
       icon: Trophy,
       desc: "Age-appropriate athletics, obstacle courses, and team games on our non-toxic EPDM rubber turf to develop gross motor skills and teamwork.",
-      image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop"
+      image: "/eurokids-interaction.jpg"
     },
     {
       title: "Festival Celebrations",

@@ -117,7 +117,6 @@ export const EnquiryDrawer: React.FC<EnquiryDrawerProps> = ({ isOpen, onClose })
                   <option value="Nursery (2.5 – 3.5 yrs)">Nursery (2.5 – 3.5 yrs)</option>
                   <option value="Junior KG (3.5 – 4.5 yrs)">Junior KG (3.5 – 4.5 yrs)</option>
                   <option value="Senior KG (4.5 – 5.5 yrs)">Senior KG (4.5 – 5.5 yrs)</option>
-                  <option value="Daycare / After School Care">Daycare / After School Care</option>
                 </select>
               </div>
 

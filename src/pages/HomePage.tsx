@@ -169,7 +169,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 className="aspect-[3/4] rounded-[30px] overflow-hidden shadow-xl border-3 border-[#0F172A]"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop" 
+                  src="/eurokids-interaction.jpg" 
                   alt="Parents visiting school" 
                   className="w-full h-full object-cover"
                 />

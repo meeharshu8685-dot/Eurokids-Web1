@@ -102,7 +102,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Dance, Beats, and Rhythm Play",
       "Obstacle Course and Balancing Games"
     ],
-    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-interaction.jpg",
     badge: "Creative Thinking",
     annualFee: "",
     termFee: ""
@@ -131,32 +131,6 @@ export const PROGRAMS_DATA: ProgramItem[] = [
     badge: "Ready for Grade 1",
     annualFee: "",
     termFee: ""
-  },
-  {
-    id: "daycare",
-    name: "Daycare & Activity Nook",
-    subtitle: "A safe, loving home away from home.",
-    ageGroup: "1.5 to 8 Years",
-    timing: "9:00 AM to 6:00 PM",
-    teacherRatio: "Close personal care and supervision",
-    description: "Our daycare is a warm space for children while parents work. We serve fresh, simple meals, provide quiet nap rooms, help with homework, and organize hobby circles like craft, yoga, and drawing.",
-    keyOutcomes: [
-      "Resting comfortably in quiet, clean nap rooms",
-      "Doing homework and reading books with guidance",
-      "Enjoying hobby classes, drawing, and games",
-      "Learning to share snacks and speak politely"
-    ],
-    dailyHighlights: [
-      "Warm Lunch and Kitchen Manners",
-      "Quiet Rest and Nap Time",
-      "Hobby Rotations and Art Circles",
-      "Outdoor Games and Afternoon Stories"
-    ],
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop",
-    badge: "Loving After-school Care",
-    annualFee: "",
-    termFee: ""
-  }
 ];
 
 export const DAY_ROUTINE: DayRoutineStep[] = [
@@ -226,7 +200,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Green Outdoor Play Area",
     subtitle: "Soft safety flooring and small nature patches.",
     description: "Equipped with rubberized flooring to prevent scrapes, climbing frames, a sandbox, and tricycle paths for active play.",
-    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-interaction.jpg",
     features: ["Padded safety flooring", "Shaded climbing frames", "Herbs and flowers patch", "Mini cycling track"],
     category: "play"
   },
@@ -244,7 +218,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Secure Campus",
     subtitle: "Ensuring child safety at all times.",
     description: "Equipped with CCTV coverage, a secure check-in system, verified staff members, and clear safety rules.",
-    image: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-interaction.jpg",
     features: ["Fully fenced campus", "CCTV check-in security", "First-aid certified staff", "Safe pick-up gates"],
     category: "safety"
   },
@@ -297,8 +271,8 @@ export const TESTIMONIALS: Testimonial[] = [
     parentName: "Anjali Saxena",
     childNameAndGrade: "Parent of Kabir (Playgroup)",
     locality: "Balwant Nagar, Gwalior",
-    quote: "The daycare facilities are exceptionally clean and safe. The teachers help with homework and organize beautiful drawing workshops.",
-    avatar: "https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=1200&auto=format&fit=crop",
+    quote: "The school environment is exceptionally clean, safe, and welcoming. The teachers are incredibly patient, and they organize beautiful drawing workshops.",
+    avatar: "/eurokids-interaction.jpg",
     rating: 5,
     date: "June 2026"
   }
