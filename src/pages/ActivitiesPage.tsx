@@ -23,7 +23,7 @@ export const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ onOpenBookVisit 
       category: "Creative Expression",
       icon: Palette,
       desc: "Children experiment with non-toxic clay, vegetable dyes, watercolor blending, and paper craft to build fine-motor agility and aesthetic imagination.",
-      image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop"
+      image: "/eurokids-writing.jpg"
     },
     {
       title: "Music & Dance",

@@ -65,7 +65,7 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onOpenBookVisit }) =
                     {prog.name}
                   </h2>
                   <p className="text-[#0EA5E9] font-sans font-medium uppercase tracking-widest text-sm">
-                    {prog.ageGroup} | {prog.timing}
+                    {prog.timing}
                   </p>
                 </div>
                 

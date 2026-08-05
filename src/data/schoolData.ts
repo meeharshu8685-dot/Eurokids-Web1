@@ -52,7 +52,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Water and Paint Exploration",
       "Healthy Fruit and Snack Break"
     ],
-    image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-writing.jpg",
     badge: "First Steps",
     annualFee: "",
     termFee: ""
@@ -253,7 +253,7 @@ export const TESTIMONIALS: Testimonial[] = [
     childNameAndGrade: "Parent of Aarav (Senior KG)",
     locality: "Thatipur, Gwalior",
     quote: "The school is beautifully run and feels incredibly warm and secure. The teachers are very patient, and my son Aarav is always excited to go. I highly recommend it.",
-    avatar: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
+    avatar: "/eurokids-writing.jpg",
     rating: 5,
     date: "April 2026"
   },

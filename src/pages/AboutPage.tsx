@@ -66,7 +66,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBookVisit, setActive
           >
             <div className="aspect-[4/3] rounded-[32px] overflow-hidden ml-auto w-[85%] relative z-10 border-3 border-slate-900 shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop" 
+                src="/eurokids-writing.jpg" 
                 alt="Teacher with children" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
               />

@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import React, { useState, useEffect } from 'react';
+import { motion, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { ArrowRight, ArrowUpRight, Star, Heart, Sun } from 'lucide-react';
 import { PageView } from '../types';
 import { PROGRAMS_DATA, GALLERY_ITEMS, TESTIMONIALS } from '../data/schoolData';
@@ -19,20 +19,39 @@ export const HomePage: React.FC<HomePageProps> = ({
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const heroImages = [
+    "/eurokids-interaction.jpg",
+    "/eurokids-writing.jpg",
+    "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=2000&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=2000&auto=format&fit=crop"
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="w-full bg-base overflow-hidden">
       
       {/* 1. HERO */}
       <section className="relative h-[90vh] min-h-[650px] w-full flex items-end pb-28 lg:pb-36 px-6 lg:px-16 overflow-hidden bg-primary/10">
-        <div className="absolute inset-0 z-0">
-          <motion.img 
-            initial={{ scale: 1.1 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=2000&auto=format&fit=crop" 
-            alt="Children playing" 
-            className="w-full h-full object-cover object-top"
-          />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.img 
+              key={currentSlide}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+              src={heroImages[currentSlide]} 
+              alt="EuroKids School Environment" 
+              className="absolute inset-0 w-full h-full object-cover object-top"
+            />
+          </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />
         </div>
         
@@ -286,9 +305,6 @@ export const HomePage: React.FC<HomePageProps> = ({
                      alt={prog.name} 
                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                    />
-                   <div className="absolute top-4 left-4 bg-white/95 border-2 border-slate-900 px-4 py-1.5 rounded-full text-xs font-sans font-bold text-primary">
-                     {prog.ageGroup}
-                   </div>
                  </div>
                  <div className="px-2 pb-4">
                    <h3 className="text-3xl text-primary mb-3 group-hover:text-accent transition-colors">{prog.name}</h3>
@@ -352,7 +368,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               className="aspect-square w-[55%] rounded-[30px] overflow-hidden absolute -bottom-10 -left-10 z-20 border-3 border-slate-900 bg-white p-2 shadow-2xl hidden md:block"
             >
               <img 
-                src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop" 
+                src="/eurokids-writing.jpg" 
                 alt="Outdoor play" 
                 className="w-full h-full object-cover rounded-[20px]"
               />
