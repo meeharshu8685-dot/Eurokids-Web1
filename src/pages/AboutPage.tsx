@@ -74,10 +74,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBookVisit, setActive
             </div>
             <div className="aspect-square rounded-[24px] overflow-hidden absolute -bottom-16 left-0 w-[45%] border-3 border-slate-900 bg-white p-2 z-20 hidden md:block shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=800&auto=format&fit=crop" 
+                src="/eurokids-playgroup-1.jpg" 
                 alt="Classroom" 
                 className="w-full h-full object-cover rounded-[16px]"
-                onError={(e) => { e.currentTarget.src = '/eurokids-writing.jpg'; }}
+                onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
               />
             </div>
           </motion.div>

@@ -77,7 +77,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Blocks, Matching, and Puzzles",
       "Mud Play and Seed Planting"
     ],
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-apple.jpg",
     badge: "Active Curiosity",
     annualFee: "",
     termFee: ""
@@ -127,7 +127,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Pottery, Clay, and Art Crafts",
       "Graduation Class Activities"
     ],
-    image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-classroom-activity.jpg",
     badge: "Ready for Grade 1",
     annualFee: "",
     termFee: ""
@@ -192,7 +192,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Sunny Classrooms",
     subtitle: "Bright, airy spaces with child-friendly furniture.",
     description: "Classrooms feature large windows for natural light, low open shelves that children can easily reach, and child-safe rounded furniture.",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-playgroup-1.jpg",
     features: ["Round-edged wooden tables", "Low shelving for independence", "Fresh air flow", "Comfortable soft carpets"],
     category: "classroom"
   },
@@ -210,7 +210,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Cozy Story Book Library",
     subtitle: "A quiet space to discover stories.",
     description: "A comfortable space filled with picture books, soft pillows, audiobooks, and texture cards to encourage a love for reading.",
-    image: "https://images.unsplash.com/photo-1503676382389-4809596d5290?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-butterfly.jpg",
     features: ["Colorful picture books", "Soft reading pillows", "Touch-and-feel books", "Quiet story corner"],
     category: "learning"
   },
@@ -228,7 +228,7 @@ export const FACILITIES: CampusFacility[] = [
     title: "Simple, Healthy Meals",
     subtitle: "Fresh snacks prepared daily in a clean kitchen.",
     description: "We serve simple, fresh snacks free from artificial colors or heavy spices, keeping food allergies and preferences in mind.",
-    image: "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop",
+    image: "/eurokids-playgroup-2.jpg",
     features: ["Clean, visible kitchen", "Allergy-safe preparation", "RO water filter stations", "Fresh fruits and warm milk"],
     category: "health"
   }
@@ -241,7 +241,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     qualification: "M.A. in Child Development",
     experience: "10+ Years",
     bio: "Harsha believes that school should feel like a second home. She is dedicated to creating a warm, supportive space where children feel safe to learn.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+    image: "/eurokids-interaction.jpg",
     specialty: "Early Childhood Pedagogy & Care"
   }
 ];
@@ -263,7 +263,7 @@ export const TESTIMONIALS: Testimonial[] = [
     childNameAndGrade: "Parent of Pihu (Nursery)",
     locality: "Gandhi Road, Gwalior",
     quote: "We love the focus on simple, healthy snacks and the cozy story library. Our daughter Pihu has become much more expressive and independent.",
-    avatar: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop",
+    avatar: "/eurokids-apple.jpg",
     rating: 5,
     date: "May 2026"
   },
@@ -286,7 +286,7 @@ export const LATEST_NEWS: NewsEvent[] = [
     category: "Admission",
     date: "July 2026",
     excerpt: "Admissions are open for Playgroup, Nursery, and KG programs. Feel free to schedule a walkthrough of our classrooms.",
-    image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=1200&auto=format&fit=crop"
+    image: "/eurokids-butterfly.jpg"
   },
   {
     id: "news-2",
@@ -294,7 +294,7 @@ export const LATEST_NEWS: NewsEvent[] = [
     category: "Activity",
     date: "July 2026",
     excerpt: "Children enjoyed a beautiful day painting, hand-printing, and constructing paper crafts in our creative art zone.",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1200&auto=format&fit=crop"
+    image: "/eurokids-playgroup-1.jpg"
   },
   {
     id: "news-3",
@@ -302,7 +302,7 @@ export const LATEST_NEWS: NewsEvent[] = [
     category: "Community",
     date: "June 2026",
     excerpt: "A warm storytelling workshop bringing families and educators together to discuss reading aloud to children.",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1200&auto=format&fit=crop"
+    image: "/eurokids-classroom-activity.jpg"
   }
 ];
 

@@ -30,28 +30,28 @@ export const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ onOpenBookVisit 
       category: "Aesthetic Intelligence",
       icon: Music,
       desc: "Weekly percussion circles with xylophones, bongos, and classical Indian rhythmic patterns that enhance auditory memory and motor synchronization.",
-      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=1200&auto=format&fit=crop"
+      image: "/eurokids-playgroup-1.jpg"
     },
     {
       title: "Storytelling",
       category: "Linguistic Mastery",
       icon: BookOpen,
       desc: "Bilingual puppetry, dramatic role-play, and audiobooks in our Wonder Nook library that cultivate vocabulary and expressive public speaking.",
-      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=1200&auto=format&fit=crop"
+      image: "/eurokids-butterfly.jpg"
     },
     {
       title: "STEM Activities",
       category: "Scientific Logic",
       icon: Cpu,
       desc: "Hands-on water density tests, plant lifecycle monitoring in our organic garden, magnet puzzles, and basic robotics logic.",
-      image: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop"
+      image: "/eurokids-apple.jpg"
     },
     {
       title: "Yoga",
       category: "Emotional Well-Being",
       icon: Smile,
       desc: "Child-friendly animal yoga postures, gentle diaphragmatic breathing, and morning gratitude circles to promote self-regulation and inner calm.",
-      image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop"
+      image: "/eurokids-playgroup-2.jpg"
     },
     {
       title: "Sports",
@@ -65,7 +65,7 @@ export const ActivitiesPage: React.FC<ActivitiesPageProps> = ({ onOpenBookVisit 
       category: "Cultural Immersion",
       icon: Calendar,
       desc: "Joyful celebrations of cultural festivals fostering respect, diversity, and community spirit through music, traditional dress, and shared meals.",
-      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=1200&auto=format&fit=crop"
+      image: "/eurokids-classroom-activity.jpg"
     }
   ];
 

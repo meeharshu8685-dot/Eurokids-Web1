@@ -38,10 +38,10 @@ export const HomePage: React.FC<HomePageProps> = ({
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=2000&auto=format&fit=crop" 
+            src="/eurokids-interaction.jpg" 
             alt="Children playing" 
             className="w-full h-full object-cover object-top"
-            onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
+            onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />
         </div>
@@ -140,7 +140,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="absolute inset-0 bg-sage rounded-[30px] transform translate-x-4 translate-y-4 -z-10 opacity-20"></div>
             <div className="aspect-[4/5] rounded-[30px] overflow-hidden relative border-3 border-slate-900 shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop" 
+                src="/eurokids-writing.jpg" 
                 alt="Teacher reading to child" 
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
                 onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
@@ -230,7 +230,7 @@ export const HomePage: React.FC<HomePageProps> = ({
            >
              <div className="aspect-square rounded-[40px] overflow-hidden border-3 border-slate-900 shadow-xl">
                <img 
-                 src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1200&auto=format&fit=crop" 
+                 src="/eurokids-butterfly.jpg" 
                  alt="Child painting" 
                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
                  onError={(e) => { e.currentTarget.src = '/eurokids-writing.jpg'; }}
@@ -350,7 +350,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               className="aspect-[4/5] w-[85%] rounded-[40px] overflow-hidden ml-auto relative z-10 shadow-xl border-3 border-slate-900"
             >
               <img 
-                src="https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=1200&auto=format&fit=crop" 
+                src="/eurokids-playgroup-1.jpg" 
                 alt="Classroom" 
                 className="w-full h-full object-cover"
                 onError={(e) => { e.currentTarget.src = '/eurokids-writing.jpg'; }}
@@ -475,7 +475,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         >
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=2000&auto=format&fit=crop" 
+              src="/eurokids-playgroup-2.jpg" 
               alt="Children smiling" 
               className="w-full h-full object-cover transform scale-105"
               onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
