@@ -19,22 +19,7 @@ export const HomePage: React.FC<HomePageProps> = ({
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const heroImages = [
-    "/eurokids-interaction.jpg",
-    "/eurokids-writing.jpg",
-    "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=2000&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1503454537195-1dc534b36f61?q=80&w=2000&auto=format&fit=crop"
-  ];
-
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
 
   useEffect(() => {
     const testimonialInterval = setInterval(() => {
@@ -48,20 +33,16 @@ export const HomePage: React.FC<HomePageProps> = ({
       
       {/* 1. HERO */}
       <section className="relative h-[90vh] min-h-[650px] w-full flex items-end pb-28 lg:pb-36 px-6 lg:px-16 overflow-hidden bg-primary/10">
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <AnimatePresence mode="wait">
-            <motion.img 
-              key={currentSlide}
-              initial={{ opacity: 0, scale: 1.05 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.2, ease: "easeInOut" }}
-              src={heroImages[currentSlide]} 
-              alt="EuroKids School Environment" 
-              className="absolute inset-0 w-full h-full object-cover object-top"
-              onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
-            />
-          </AnimatePresence>
+        <div className="absolute inset-0 z-0">
+          <motion.img 
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=2000&auto=format&fit=crop" 
+            alt="Children playing" 
+            className="w-full h-full object-cover object-top"
+            onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/35 to-transparent" />
         </div>
         

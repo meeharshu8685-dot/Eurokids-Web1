@@ -372,6 +372,55 @@ export const GALLERY_ITEMS: GalleryImage[] = [
     category: "Classrooms",
     image: "/word-wheel.png",
     caption: "Toddlers learning phonics patterns using hands-on sorting tools."
+  },
+  {
+    id: "g5",
+    title: "Teacher Guidance",
+    category: "Classrooms",
+    image: "/eurokids-interaction.jpg",
+    caption: "Nurturing interaction between teacher and child."
+  },
+  {
+    id: "g6",
+    title: "Writing & Puzzles",
+    category: "Activities",
+    image: "/eurokids-writing.jpg",
+    caption: "Focusing on cognitive tasks and tracing numbers."
+  },
+  {
+    id: "g7",
+    title: "Coloring a Butterfly",
+    category: "Activities",
+    image: "/eurokids-butterfly.jpg",
+    caption: "Creative coloring and self-expression."
+  },
+  {
+    id: "g8",
+    title: "Playgroup Circle Time",
+    category: "Activities",
+    image: "/eurokids-playgroup-1.jpg",
+    caption: "Children learning to play and share together."
+  },
+  {
+    id: "g9",
+    title: "Ball Rolling Game",
+    category: "Activities",
+    image: "/eurokids-playgroup-2.jpg",
+    caption: "Fun physical activities for motor skills."
+  },
+  {
+    id: "g10",
+    title: "Proud of My Artwork",
+    category: "Classrooms",
+    image: "/eurokids-apple.jpg",
+    caption: "Showing off completed drawing worksheets."
+  },
+  {
+    id: "g11",
+    title: "Puzzles and Shapes",
+    category: "Classrooms",
+    image: "/eurokids-classroom-activity.jpg",
+    caption: "Hands-on learning toys to develop coordination."
   }
 ];
 

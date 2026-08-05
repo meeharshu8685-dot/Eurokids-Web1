@@ -7,6 +7,25 @@ interface ProgramsPageProps {
   onOpenBookVisit: () => void;
 }
 
+const feedbacksByStage: Record<string, { quote: string; author: string }> = {
+  'playgroup': {
+    quote: "The playgroup settled Kabir so beautifully. The sensory activities and caring staff are unmatched.",
+    author: "Anjali Saxena (Parent of Kabir)"
+  },
+  'nursery': {
+    quote: "Pihu has learned to express her thoughts so clearly. We love the focus on independence and reading.",
+    author: "Rajesh Dixit (Parent of Pihu)"
+  },
+  'junior-kg': {
+    quote: "A perfect blend of science, letters, and socializing. Riya loves the drawing class!",
+    author: "Siddharth Malhotra (Parent of Riya)"
+  },
+  'senior-kg': {
+    quote: "Excellent academic prep for primary school! Aarav is reading short stories confidently.",
+    author: "Neha Sharma (Parent of Aarav)"
+  }
+};
+
 export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onOpenBookVisit }) => {
   return (
     <div className="w-full bg-[#FFFFFF] pt-32 pb-24 lg:pb-32">
@@ -33,59 +52,77 @@ export const ProgramsPage: React.FC<ProgramsPageProps> = ({ onOpenBookVisit }) =
       <section className="px-6 lg:px-16 max-w-[1600px] mx-auto mb-24 lg:mb-32">
         <div className="space-y-32 lg:space-y-48">
           {PROGRAMS_DATA.map((prog, index) => (
-            <div 
-              key={prog.id} 
-              className={`grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center ${
-                index % 2 !== 0 ? 'lg:grid-flow-col-dense' : ''
-              }`}
-            >
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.98 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                className={`lg:col-span-7 aspect-[4/3] rounded-[20px] overflow-hidden ${index % 2 !== 0 ? 'lg:col-start-6' : ''}`}
-              >
-                <img 
-                  src={prog.image} 
-                  alt={prog.name} 
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-                  onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
-                />
-              </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, x: index % 2 === 0 ? 30 : -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className={`lg:col-span-5 space-y-8 ${index % 2 !== 0 ? 'lg:col-start-1 lg:pr-10' : ''}`}
-              >
-                <div className="space-y-2">
-                  <h2 className="text-4xl lg:text-5xl text-[#0F172A] leading-tight">
-                    {prog.name}
-                  </h2>
-                  <p className="text-[#0EA5E9] font-sans font-medium uppercase tracking-widest text-sm">
-                    {prog.timing}
+            <div key={prog.id} className="space-y-12">
+              {feedbacksByStage[prog.id] && (
+                <motion.div 
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="bg-amber-50/60 border border-amber-200/50 p-6 rounded-2xl max-w-3xl mx-auto text-center"
+                >
+                  <p className="text-slate-700 italic font-medium">
+                    "{feedbacksByStage[prog.id].quote}"
                   </p>
-                </div>
+                  <p className="text-xs font-bold text-amber-700 mt-2">
+                    — {feedbacksByStage[prog.id].author}
+                  </p>
+                </motion.div>
+              )}
+              
+              <div 
+                className={`grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center ${
+                  index % 2 !== 0 ? 'lg:grid-flow-col-dense' : ''
+                }`}
+              >
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.98 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  className={`lg:col-span-7 aspect-[4/3] rounded-[20px] overflow-hidden ${index % 2 !== 0 ? 'lg:col-start-6' : ''}`}
+                >
+                  <img 
+                    src={prog.image} 
+                    alt={prog.name} 
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                    onError={(e) => { e.currentTarget.src = '/eurokids-interaction.jpg'; }}
+                  />
+                </motion.div>
                 
-                <p className="text-[#475569] font-sans font-light text-lg leading-relaxed">
-                  {prog.description}
-                </p>
+                <motion.div 
+                  initial={{ opacity: 0, x: index % 2 === 0 ? 30 : -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className={`lg:col-span-5 space-y-8 ${index % 2 !== 0 ? 'lg:col-start-1 lg:pr-10' : ''}`}
+                >
+                  <div className="space-y-2">
+                    <h2 className="text-4xl lg:text-5xl text-[#0F172A] leading-tight">
+                      {prog.name}
+                    </h2>
+                    <p className="text-[#0EA5E9] font-sans font-medium uppercase tracking-widest text-sm">
+                      {prog.timing}
+                    </p>
+                  </div>
+                  
+                  <p className="text-[#475569] font-sans font-light text-lg leading-relaxed">
+                    {prog.description}
+                  </p>
 
-                <div className="pt-6 border-t border-[#E2E8F0]">
-                  <ul className="space-y-4">
-                    {prog.keyOutcomes.slice(0, 3).map((feat, fIdx) => (
-                      <li key={fIdx} className="flex items-start gap-4 text-[#475569] font-sans font-light">
-                        <span className="text-[#F59E0B] mt-1 text-lg leading-none">•</span>
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-              </motion.div>
+                  <div className="pt-6 border-t border-[#E2E8F0]">
+                    <ul className="space-y-4">
+                      {prog.keyOutcomes.slice(0, 3).map((feat, fIdx) => (
+                        <li key={fIdx} className="flex items-start gap-4 text-[#475569] font-sans font-light">
+                          <span className="text-[#F59E0B] mt-1 text-lg leading-none">•</span>
+                          <span>{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                </motion.div>
+              </div>
             </div>
           ))}
         </div>
