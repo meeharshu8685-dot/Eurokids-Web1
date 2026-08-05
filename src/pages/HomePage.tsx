@@ -95,7 +95,62 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* 2. WELCOME (Editorial Split) */}
+      {/* 2. PARENT TESTIMONIALS (FEEDBACKS FIRST) */}
+      <section className="py-16 lg:py-24 px-6 lg:px-16 max-w-[1200px] mx-auto text-center relative bg-dot-pattern">
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[120px] font-sans text-primary/10 leading-none z-0 select-none">“</div>
+        
+        <div className="relative z-10 min-h-[380px] flex flex-col justify-center">
+          <AnimatePresence mode="wait">
+            <motion.div 
+              key={currentTestimonial}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center"
+            >
+              <div className="w-24 h-24 rounded-full overflow-hidden mb-8 border-4 border-slate-900 shadow-lg bg-slate-100">
+                <img 
+                  src={TESTIMONIALS[currentTestimonial].avatar} 
+                  alt={TESTIMONIALS[currentTestimonial].parentName} 
+                  className="w-full h-full object-cover"
+                  onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
+                />
+              </div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl leading-snug lg:leading-tight text-[#0F172A] mb-6 max-w-4xl font-serif">
+                "{TESTIMONIALS[currentTestimonial].quote}"
+              </h2>
+              <div className="flex flex-col items-center gap-1">
+                <div className="flex gap-1 text-accent mb-2">
+                  {[...Array(TESTIMONIALS[currentTestimonial].rating || 5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4" fill="currentColor" />
+                  ))}
+                </div>
+                <p className="font-sans font-bold text-primary text-lg">{TESTIMONIALS[currentTestimonial].parentName}</p>
+                <p className="font-sans text-[#475569] font-medium text-sm">{TESTIMONIALS[currentTestimonial].childNameAndGrade}</p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center gap-2.5 mt-8">
+            {TESTIMONIALS.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentTestimonial(idx)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  currentTestimonial === idx 
+                    ? 'bg-primary scale-125' 
+                    : 'bg-slate-300 hover:bg-slate-400'
+                }`}
+                aria-label={`Go to testimonial ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. WELCOME (Editorial Split) */}
       <section className="py-24 lg:py-32 px-6 lg:px-16 max-w-[1600px] mx-auto relative bg-dot-pattern">
         {/* Floating background shapes */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full -z-10 -translate-y-1/2 translate-x-1/4 blur-3xl opacity-60"></div>
@@ -411,59 +466,6 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* 8. PARENT TESTIMONIALS */}
-      <section className="py-24 lg:py-32 px-6 lg:px-16 max-w-[1200px] mx-auto text-center relative bg-dot-pattern">
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 text-[120px] font-sans text-primary/10 leading-none z-0 select-none">“</div>
-        
-        <div className="relative z-10 min-h-[400px] flex flex-col justify-center">
-          <AnimatePresence mode="wait">
-            <motion.div 
-              key={currentTestimonial}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-              className="flex flex-col items-center"
-            >
-              <div className="w-24 h-24 rounded-full overflow-hidden mb-10 border-4 border-slate-900 shadow-lg bg-slate-100">
-                <img 
-                  src={TESTIMONIALS[currentTestimonial].avatar} 
-                  alt={TESTIMONIALS[currentTestimonial].parentName} 
-                  className="w-full h-full object-cover"
-                  onError={(e) => { e.currentTarget.src = '/eurokids-logo.jpg'; }}
-                />
-              </div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl leading-snug lg:leading-tight text-[#0F172A] mb-8 max-w-4xl font-serif">
-                "{TESTIMONIALS[currentTestimonial].quote}"
-              </h2>
-              <div className="flex flex-col items-center gap-1">
-                <div className="flex gap-1 text-accent mb-2">
-                  {[...Array(TESTIMONIALS[currentTestimonial].rating || 5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4" fill="currentColor" />
-                  ))}
-                </div>
-                <p className="font-sans font-bold text-primary text-lg">{TESTIMONIALS[currentTestimonial].parentName}</p>
-                <p className="font-sans text-[#475569] font-medium text-sm">{TESTIMONIALS[currentTestimonial].childNameAndGrade}</p>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center gap-2.5 mt-10">
-            {TESTIMONIALS.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentTestimonial(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentTestimonial === idx 
-                    ? 'bg-primary scale-125' 
-                    : 'bg-slate-300 hover:bg-slate-400'
-                }`}
-                aria-label={`Go to testimonial ${idx + 1}`}
-              />
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* 9. CTA */}
